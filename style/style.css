@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cards {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Realizando estilização do card sedans */
+
+.cards .card-sedans {
+    background: hsl(31, 77%, 52%);
+    width: 280px;
+    height: 430px;
+    padding: 40px;
+    border-radius: 10px 0 0 10px;
+    text-align: justify;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.cards .card-sedans h1,
+.cards .card-suvs h1,
+.cards .card-luxury h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+.card-sedans p,
+.card-suvs p,
+.card-luxury p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0;
+    width: 210px;
+    line-height: 1.4rem;
+}
+
+.cards button {
+    border: 0;
+    font-weight: 700;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    top: 75px;
+}
+
+.cards .card-sedans .button-sedans {
+    color: hsl(31, 77%, 52%);
+    background: hsl(0, 0%, 95%);
+}
+
+.cards .card-sedans .button-sedans:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: hsl(0, 0%, 95%) solid 2px;
+    font-weight: 400;
+}
+
+
+/* Realizando estilização do card suvs */
+
+.cards .card-suvs {
+    background: hsl(184, 100%, 22%);
+    width: 280px;
+    height: 430px;
+    padding: 40px 30px 30px;
+    text-align: justify;
+    color: hsla(0, 0%, 100%, 0.75)
+}
+
+.cards .card-suvs .button-suvs {
+    color: hsl(184, 100%, 22%);
+    background: hsl(0, 0%, 95%);
+}
+
+.cards .card-suvs .button-suvs:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: hsl(0, 0%, 95%) solid 2px;
+    font-weight: 400;
+}
+
+
+/* Realizando estilização do card luxury */
+
+.cards .card-luxury {
+    background: hsl(179, 100%, 13%);
+    width: 280px;
+    height: 430px;
+    padding: 40px;
+    border-radius: 0 10px 10px 0;
+    text-align: justify;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.cards .card-luxury .button-luxury {
+    color: hsl(179, 100%, 13%);
+    background: hsl(0, 0%, 95%);
+}
+
+.cards .card-luxury .button-luxury:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: hsl(0, 0%, 95%) solid 2px;
+    font-weight: 400;
+}
+
+
+/* Realizando estilização do rodapé */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    top: 250px;
+    color: hsl(228, 45%, 44%);
+}
